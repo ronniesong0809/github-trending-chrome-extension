@@ -8,11 +8,20 @@ async function fetchTrending(range) {
 
   for (var i in data) {
     if (data[i].name) {
+      var project = "<img src='" + data[i].avatar + "' style='width:15px;height:15px;margin-right:5px;vertical-align:inherit' SameSite/>" + 
+        "<a href='" + data[i].url + "' target='_blank' rel='noopener noreferrer'>" + data[i].author + " / " + data[i].name + "</a> <br/>"
+
+      var description = (data[i].description!="" ? '<span>"' + data[i].description + '"</span>' + "<br/>" : "")
+
+      var starsForks = "<span class='badge badge-secondary' style='background-color:" + data[i].languageColor + "'>" + data[i].language + "</span> " + 
+        "<i class='far fa-star' style='margin-left:10px'></i> " + data[i].stars + "<span style='color:gray;font-size:10px;>+" + data[i].currentPeriodStars + " today</span> " + 
+        "<i class='fas fa-code-branch' style='margin-left:10px'></i> " + data[i].forks
+
       document.getElementById("gh-trending").innerHTML +=
-        "<hr/><div style='padding-left:15px;padding-right:15px'>" +
-        "<img src='" + data[i].avatar + "' style='width:15px;height:15px;margin-right:5px;vertical-align:inherit' SameSite/>" + "<a href='" + data[i].url + "' target='_blank' rel='noopener noreferrer'>" + data[i].author + " / " + data[i].name + "</a> <br/>" +
-        '<span>"' + data[i].description + '"</span>' + "<br/>" +
-        "<span class='badge badge-secondary' style='background-color:" + data[i].languageColor + "'>" + data[i].language + "</span> <i class='far fa-star' style='margin-left:10px'></i> " + data[i].stars + " (+" + data[i].currentPeriodStars + " today) <i class='fas fa-code-branch' style='margin-left:10px'></i> " + data[i].forks + "</div>"
+        "<hr/>" + 
+        "<div style='padding-left:15px;padding-right:15px'>" +
+          project + description + starsForks + 
+        "</div>"
     }
   }
 }
