@@ -5,6 +5,7 @@
     body {
       width: 400px;
       height: 100px;
+      padding: 15px;
     }
 
     div {
@@ -22,18 +23,19 @@
       margin-left: 10px;
     }
 
-    #repo {
-      padding-left: 15px;
-      padding-right: 15px;
+    h4 {
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      color: gray;
+      font-size: 10px;
     }
 
     #grayText {
       color: gray;
       font-size: 10px;
-    }
-
-    #d-button {
-      padding-top: 10px;
     }
   </style>
 </head>
@@ -43,10 +45,13 @@
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
 
-  <div id="d-button">
+  <h4><i class="fab fa-github" aria-hidden="true"></i> Github Trending</h4>
+  <div>
     <button id="dateRange-button" type="button" class="btn btn-outline-primary">Daily</button>
-  </div>
-  <div id="gh-trending"></div>
+    <div id="gh-trending"></div>
+  </div><hr>
+  <footer>&copy; 2020 by <a href="https://www.github.com/ronniesong0809" rel="noopener noreferrer" target="_blank">Ronnie Song</a>, All right reserved</footer>
+
   <script src="js/function.js"></script>
 </body>
 
