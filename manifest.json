@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Github Trending",
-  "version": "1.0",
+  "version": "1.1.0",
   "description": "Github Trending Chrome extension",
   "icons": {
     "16": "images/16.png",
