@@ -1,5 +1,5 @@
 async function fetchTrending(range) {
-  let url = "https://ghapi.huchen.dev/repositories?since=" + range
+  let url = "https://gtrend.yapie.me/repositories?since=" + range
 
   const response = await fetch(url)
   const data = await response.json()
