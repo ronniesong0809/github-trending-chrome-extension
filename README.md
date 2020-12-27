@@ -22,7 +22,7 @@ This extension display the trending repositories on GitHub of the day/week/month
 # Install
 
 <a href="https://chrome.google.com/webstore/detail/github-trending/gillhpempkbfpbblallnbmmboboheehk?utm_source=GitHub&utm_medium=ronniesong0809/github-trending-chrome-extension">
-  <img src="https://developer.chrome.com/webstore/images/ChromeWebStore_Badge_v2_206x58.png" />
+  <img src="https://github.com/ronniesong0809/github-trending-chrome-extension/blob/master/images/ChromeWebStore_Badge.png" />
 </a>
 
 Install Github Trending Chrome Extension from [Chrome Web Store](https://chrome.google.com/webstore/detail/github-trending/gillhpempkbfpbblallnbmmboboheehk?utm_source=GitHub&utm_medium=ronniesong0809/github-trending-chrome-extension).
